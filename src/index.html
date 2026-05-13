@@ -1136,14 +1136,30 @@
                   </div>
 
                   <div class="col-md-12">
-                    <label for="subject-field" class="pb-2">Subject</label>
-                    <input
-                      type="text"
+                    <label for="service-field" class="pb-2"
+                      >What do you need help with?</label
+                    >
+                    <select
                       class="form-control"
-                      name="subject"
-                      id="subject-field"
+                      name="service"
+                      id="service-field"
                       required
-                    />
+                    >
+                      <option value="" disabled selected>
+                        Select a service
+                      </option>
+                      <option value="Web Application">Web Application</option>
+                      <option value="System Integration">
+                        System Integration
+                      </option>
+                      <option value="Enterprise Consulting">
+                        Enterprise Consulting
+                      </option>
+                      <option value="SME Discount Program">
+                        SME Discount Program
+                      </option>
+                      <option value="Something else">Something else</option>
+                    </select>
                   </div>
 
                   <div class="col-md-12">
@@ -1153,6 +1169,7 @@
                       name="message"
                       rows="10"
                       id="message-field"
+                      placeholder="Tell us about your requirements."
                       required
                     ></textarea>
                   </div>
